@@ -2,6 +2,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "../context/themecontext";
 import profilePic from "../assets/h.jpg";
 import { useState } from "react";
+import afn from '../assets/afn.png'
+import tjp from '../assets/tjp.png'
+import qj from '../assets/qj.png'
+import tlp from '../assets/tlp.png'
 
 
 const educationData = [
@@ -45,22 +49,22 @@ const experienceData = [
 const projects = [
   {
     title: "AfterSchool Nepal",
-    image: "./src/assets/afn.png",
+    image: afn,
     link: "https://afterschoolnepal.com/default.aspx?aspxerrorpath=/",
   },
   {
     title: "Texas Learning Portal",
-    image: "./src/assets/tlp.png",
+    image: tlp,
     link: "https://www.texaslearningportal.com/Default.aspx?aspxerrorpath=/",
   },
   {
     title: "Quick Junction",
-    image: "./src/assets/qj.png",
+    image: qj,
     link: "https://www.quickjunction.com/",
   },
    {
     title: "Texas Job Portal",
-    image:"./src/assets/tjp.png",
+    image: tjp,
     link: "https://texasjobportal.com/default.aspx?aspxerrorpath=/",
   },
 ];

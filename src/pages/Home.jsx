@@ -2,6 +2,7 @@ import { useTheme } from "../context/themecontext";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
+import dd from '../assets/dragon.jpg'
 
 export default function Home() {
   const { isDarkMode } = useTheme();
@@ -19,7 +20,7 @@ export default function Home() {
       >
 
         <motion.img
-          src="../src/assets/dragon.jpg"
+          src= {dd}
           alt="Profile"
           initial={{ y: 0 }}
           animate={{ y: [0, -10, 0] }}
