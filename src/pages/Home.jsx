@@ -8,9 +8,8 @@ export default function Home() {
 
   return (
     <div
-      className={`min-h-screen flex items-center justify-center  ${
-        isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
-      }`}
+      className={`min-h-screen flex items-center justify-center  ${isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
+        }`}
     >
       <motion.div
         initial={{ opacity: 0, y: 24 }}
@@ -18,9 +17,9 @@ export default function Home() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="container w-full max-w-3xl text-center space-y-6 "
       >
-        
+
         <motion.img
-          src="../src/assets/dragon.jpg" 
+          src="../src/assets/dragon.jpg"
           alt="Profile"
           initial={{ y: 0 }}
           animate={{ y: [0, -10, 0] }}
@@ -32,12 +31,12 @@ export default function Home() {
           className="w-24 h-24 mx-auto rounded-full border-2 border-green-500 shadow-md"
         />
 
-  
+
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           Hi, I'm <span className="text-green-600">Sijan Basnet</span>
         </h1>
 
-   
+
         <span className="block text-sm uppercase tracking-widest text-green-500">
           <Typewriter
             words={[
@@ -54,24 +53,32 @@ export default function Home() {
           />
         </span>
 
-     
+
         <p className="text-lg  dark:text-gray-500 max-w-xl mx-auto">
           I craft fast, responsive, and accessible websites using technologies
           like React, Tailwind, and .Net. Always focused on New Innovation.
         </p>
 
 
-        <div className="text-sm text-gray-500 dark:text-gray-400">
-          Tech Stack: React • Tailwind CSS • Dot Net MVC core • MSSQL
+        <div className="flex flex-wrap gap-3 mt-4 items-center justify-center m-2">
+          {["React", "Tailwind CSS", "Dot Net MVC Core", "MSSQL","Web Framework"].map((skill, idx) => (
+            <div
+              key={idx}
+              className="px-3 py-1 text-sm font-medium  dark:bg-green-700 text-green-200 rounded-full "
+            >
+              {skill}
+            </div>
+          ))}
         </div>
 
-    
+
+
         <div className="flex flex-wrap justify-center gap-4 pt-4">
           <Link
             to="/about"
             className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition"
           >
-           More Info!!!
+            More Info!!!
           </Link>
           <Link
             to="/contact"

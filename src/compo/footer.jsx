@@ -54,7 +54,7 @@ function Footer() {
         transition={{ duration: 0.5 }}
         className="text-center text-sm"
       >
-        © {new Date().getFullYear()} Sijan Basnet. All rights reserved.
+        &copy; {new Date().getFullYear()} Sijan Basnet. All rights reserved.
       </motion.p>
     </div>
   );

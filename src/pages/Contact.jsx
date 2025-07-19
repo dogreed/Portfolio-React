@@ -10,7 +10,7 @@ export default function Contact() {
       }`}
     >
       <div className="max-w-3xl mx-auto text-center space-y-6">
-        <h1 className="text-4xl font-bold">Schedule a Call</h1>
+        <h1 className="text-4xl font-bold">Schedule a Meeting</h1>
         <p className="text-gray-600 dark:text-gray-400">
           Let’s connect! Choose a time that works best for you.
         </p>
