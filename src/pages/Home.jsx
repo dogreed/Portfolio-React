@@ -61,16 +61,16 @@ export default function Home() {
         </p>
 
 
-        <div className="flex flex-wrap gap-3 mt-4 items-center justify-center m-2">
-          {["React", "Tailwind CSS", "Dot Net MVC Core", "MSSQL","Web Framework"].map((skill, idx) => (
-            <div
-              key={idx}
-              className="px-3 py-1 text-sm font-medium  dark:bg-green-700 text-green-200 rounded-full "
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
+    <div className="flex flex-wrap gap-3 mt-4 items-center justify-center m-2">
+  {["React", "Tailwind CSS", "Dot Net MVC Core", "MSSQL", "Web Framework"].map((skill, idx) => (
+    <div
+      key={idx}
+      className="px-3 py-1 text-sm font-medium bg-green-700 text-green-200 rounded-full md:bg-green-700 md:text-green-200"
+    >
+      {skill}
+    </div>
+  ))}
+</div>
 
 
 
